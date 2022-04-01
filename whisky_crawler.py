@@ -1,9 +1,8 @@
 import argparse
 import requests
-import urllib.request
 from bs4 import BeautifulSoup
 import logging
-from io import StringIO
+import altair as alt
 import pandas as pd
 import datetime
 from typing import List, Dict, Any
@@ -101,3 +100,21 @@ if __name__ == '__main__':
     store_df.to_csv(file_output)
     logger.info(
         f"::.. DATAFRAME STORED 💾 IN {file_output}")
+
+    # Plot results using Altair
+    chart_output = f"chart.png"
+    logger.info(
+        f"::.. PLOTTING RESULTS 📊 {chart_output}")
+
+    plot_df = store_df.reset_index()
+    plot_df = plot_df[["data", "marca", "preco_valor"]]
+    chart = alt.Chart(plot_df).mark_line().encode(
+        x='data:T',
+        y='preco_valor:Q',
+        color='marca'
+    ).properties(
+        title="Whisky Price Trends",
+        width=840,
+        height=320,
+    )
+    chart.save('chart_whisky.svg')

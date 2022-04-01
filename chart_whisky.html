@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-2c3f199054bbe7df293781f0a70967bb"}, "mark": "line", "encoding": {"color": {"type": "nominal", "field": "marca"}, "x": {"type": "temporal", "field": "data"}, "y": {"type": "quantitative", "field": "preco_valor"}}, "height": 320, "title": "Whisky Price Trends", "width": 840, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-2c3f199054bbe7df293781f0a70967bb": [{"data": "2022-04-01T11:56:13.450845", "marca": "Singleton", "preco_valor": 189.91}, {"data": "2022-04-01T11:56:14.943618", "marca": "Glenfiddich", "preco_valor": 284.91}, {"data": "2022-04-01T11:56:14.191140", "marca": "Glenkinchie", "preco_valor": 351.41}, {"data": "2022-04-01T11:56:15.728990", "marca": "Talisker", "preco_valor": 379.91}, {"data": "2022-04-01T11:56:16.482897", "marca": "Johnnie Walker", "preco_valor": 379.91}, {"data": "2022-04-01T11:56:17.251146", "marca": "Glenlivet", "preco_valor": 379.91}, {"data": "2022-04-01T11:56:17.946285", "marca": "Laphroaig", "preco_valor": 398.91}, {"data": "2022-04-01T11:56:18.780784", "marca": "Macallan", "preco_valor": 906.21}, {"data": "2022-04-01T11:56:19.503811", "marca": "Macallan", "preco_valor": 3061.76}, {"data": "2022-04-02T12:04:35.016311", "marca": "Singleton", "preco_valor": 159.91}, {"data": "2022-04-01T12:04:36.491235", "marca": "Glenfiddich", "preco_valor": 284.91}, {"data": "2022-04-01T12:04:35.748929", "marca": "Glenkinchie", "preco_valor": 351.41}, {"data": "2022-04-01T12:04:37.282103", "marca": "Talisker", "preco_valor": 379.91}, {"data": "2022-04-01T12:04:38.023949", "marca": "Johnnie Walker", "preco_valor": 379.91}, {"data": "2022-04-01T12:04:38.803978", "marca": "Glenlivet", "preco_valor": 379.91}, {"data": "2022-04-01T12:04:39.519494", "marca": "Laphroaig", "preco_valor": 398.91}, {"data": "2022-04-01T12:04:40.264905", "marca": "Macallan", "preco_valor": 906.21}, {"data": "2022-04-01T12:04:41.009805", "marca": "Macallan", "preco_valor": 3061.76}, {"data": "2022-04-03T12:04:35.016311", "marca": "Singleton", "preco_valor": 199.91}, {"data": "2022-04-01T14:46:00.208975", "marca": "Singleton", "preco_valor": 189.91}, {"data": "2022-04-01T14:46:01.731613", "marca": "Glenfiddich", "preco_valor": 284.91}, {"data": "2022-04-01T14:46:00.917333", "marca": "Glenkinchie", "preco_valor": 351.41}, {"data": "2022-04-01T14:46:02.450043", "marca": "Talisker", "preco_valor": 379.91}, {"data": "2022-04-01T14:46:03.233996", "marca": "Johnnie Walker", "preco_valor": 379.91}, {"data": "2022-04-01T14:46:03.953730", "marca": "Glenlivet", "preco_valor": 379.91}, {"data": "2022-04-01T14:46:04.715279", "marca": "Laphroaig", "preco_valor": 398.91}, {"data": "2022-04-01T14:46:05.402627", "marca": "Macallan", "preco_valor": 906.21}, {"data": "2022-04-01T14:46:06.139782", "marca": "Macallan", "preco_valor": 3061.76}, {"data": "2022-04-01T14:46:55.279918", "marca": "Singleton", "preco_valor": 189.91}, {"data": "2022-04-01T14:46:56.806412", "marca": "Glenfiddich", "preco_valor": 284.91}, {"data": "2022-04-01T14:46:55.986310", "marca": "Glenkinchie", "preco_valor": 351.41}, {"data": "2022-04-01T14:46:57.528575", "marca": "Talisker", "preco_valor": 379.91}, {"data": "2022-04-01T14:46:58.314002", "marca": "Johnnie Walker", "preco_valor": 379.91}, {"data": "2022-04-01T14:46:59.017668", "marca": "Glenlivet", "preco_valor": 379.91}, {"data": "2022-04-01T14:46:59.993039", "marca": "Laphroaig", "preco_valor": 398.91}, {"data": "2022-04-01T14:47:00.692604", "marca": "Macallan", "preco_valor": 906.21}, {"data": "2022-04-01T14:47:01.444598", "marca": "Macallan", "preco_valor": 3061.76}, {"data": "2022-04-01T14:48:02.325993", "marca": "Singleton", "preco_valor": 189.91}, {"data": "2022-04-01T14:48:03.834205", "marca": "Glenfiddich", "preco_valor": 284.91}, {"data": "2022-04-01T14:48:03.044315", "marca": "Glenkinchie", "preco_valor": 351.41}, {"data": "2022-04-01T14:48:04.539349", "marca": "Talisker", "preco_valor": 379.91}, {"data": "2022-04-01T14:48:05.292493", "marca": "Johnnie Walker", "preco_valor": 379.91}, {"data": "2022-04-01T14:48:06.008445", "marca": "Glenlivet", "preco_valor": 379.91}, {"data": "2022-04-01T14:48:06.731399", "marca": "Laphroaig", "preco_valor": 398.91}, {"data": "2022-04-01T14:48:07.426814", "marca": "Macallan", "preco_valor": 906.21}, {"data": "2022-04-01T14:48:08.162531", "marca": "Macallan", "preco_valor": 3061.76}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
