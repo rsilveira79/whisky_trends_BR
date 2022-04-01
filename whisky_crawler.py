@@ -85,7 +85,7 @@ if __name__ == '__main__':
 
     file_output = f"output/dataframe_{args.loja}.csv"
     old_df = pd.read_csv(file_output, index_col=0,
-                         parse_dates=True, infer_datetime_format=True)
+                         parse_dates=True)
 
     data = [get_meta_info(x, "casadabebida") for x in ALL_PRODUCTS.keys()]
     new_df = pd.DataFrame(data=data, columns=[
