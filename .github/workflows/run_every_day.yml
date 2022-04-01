@@ -22,4 +22,4 @@ jobs:
         pip install -r requirements.txt
         sudo chmod -R 777 .
     - name: Run Script
-      run: python main_script.py
+      run: python whisky_crawler.py --loja "casadabebida"
