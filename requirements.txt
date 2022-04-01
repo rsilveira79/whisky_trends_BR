@@ -3,3 +3,4 @@ pandas
 requests
 altair
 altair_saver
+selenium
