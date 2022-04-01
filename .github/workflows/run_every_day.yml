@@ -20,7 +20,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        apt-get install chromium-chromedriver
+        sudo apt-get install chromium-chromedriver
         sudo chmod -R 777 .
     - name: Run Script
       run: python whisky_crawler.py --loja "casadabebida"
