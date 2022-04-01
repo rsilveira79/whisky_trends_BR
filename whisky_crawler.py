@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import logging
 import altair as alt
+from altair_saver import save
 import pandas as pd
 import datetime
 from typing import List, Dict, Any
@@ -102,7 +103,7 @@ if __name__ == '__main__':
         f"::.. DATAFRAME STORED 💾 IN {file_output}")
 
     # Plot results using Altair
-    chart_output = f"output/chart_whisky.html"
+    chart_output = f"output/chart_whisky.png"
     logger.info(
         f"::.. PLOTTING RESULTS 📊 {chart_output}")
 
@@ -117,4 +118,4 @@ if __name__ == '__main__':
         width=840,
         height=320,
     )
-    chart.save(chart_output, webdriver='firefox')
+    save(chart, chart_output)

@@ -24,3 +24,9 @@ jobs:
         sudo chmod -R 777 .
     - name: Run Script
       run: python whisky_crawler.py --loja "casadabebida"
+    - name: Commit Files
+        run: |
+          git config --global user.name 'Roberto Silveira Bot'
+          git config --global user.email 'rsilveira79@gmail.com'
+          git commit -am "Automated report - updating data files: output"
+          git push
