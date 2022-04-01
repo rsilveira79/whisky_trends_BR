@@ -67,7 +67,7 @@ def get_meta_info(product: str, store: str) -> Dict:
         "preco_moeda": price_currency,
         "preco_valor": price_amount,
         "loja": STORES_DICT[store],
-        "data": datetime.datetime.now().date().isoformat(),
+        "data": datetime.datetime.now().isoformat(),
         "url": url
     }
     return infos
@@ -79,16 +79,25 @@ if __name__ == '__main__':
                                         usage='%(prog)s [options] --loja',
                                         description='Crawls stores for whisky prices and stores CSV file')
     my_parser.add_argument('--loja', action='store',
-                           type=str, required=False, default="casadabebida")
+                           type=str, required=True, default="casadabebida")
     args = my_parser.parse_args()
     logger.info(
         f"::.. ARGUMENTS {args} ")
-    data = [get_meta_info(x, "casadabebida") for x in ALL_PRODUCTS.keys()]
-    dataframe = pd.DataFrame(data=data, columns=[
-                             "marca", "descricao", "disponibilidade", "loja", "sku", "preco_moeda", "preco_valor", "data", "url"])
-    logger.info(
-        f"::.. DATAFRAME FOR {args.loja} HAS {len(dataframe)} ENTRIES")
+
     file_output = f"output/dataframe_{args.loja}.csv"
-    dataframe.to_csv(file_output)
+    old_df = pd.read_csv(file_output, index_col=0,
+                         parse_dates=True, infer_datetime_format=True)
+
+    data = [get_meta_info(x, "casadabebida") for x in ALL_PRODUCTS.keys()]
+    new_df = pd.DataFrame(data=data, columns=[
+        "marca", "descricao", "disponibilidade", "loja", "sku", "preco_moeda", "preco_valor", "data", "url"])
+    new_df.sort_values(by="preco_valor", ascending=True, inplace=True)
+    new_df = new_df.reset_index(drop=True)
+    new_df = new_df.set_index('data')
+    logger.info(
+        f"::.. DATAFRAME FOR {args.loja} HAS {len(new_df)} ENTRIES")
+
+    store_df = pd.concat([old_df, new_df], axis=0)
+    store_df.to_csv(file_output)
     logger.info(
         f"::.. DATAFRAME STORED 💾 IN {file_output}")
