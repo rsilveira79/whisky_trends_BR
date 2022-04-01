@@ -103,7 +103,7 @@ if __name__ == '__main__':
         f"::.. DATAFRAME STORED 💾 IN {file_output}")
 
     # Plot results using Altair
-    chart_output = f"output/chart_whisky.png"
+    chart_output = f"chart_whisky.png"
     logger.info(
         f"::.. PLOTTING RESULTS 📊 {chart_output}")
 
@@ -118,4 +118,4 @@ if __name__ == '__main__':
         width=840,
         height=320,
     )
-    save(chart, chart_output)
+    save(chart, "chart_whisky.png")
