@@ -117,4 +117,4 @@ if __name__ == '__main__':
         width=840,
         height=320,
     )
-    chart.save(chart_output)
+    chart.save(chart_output, webdriver='firefox')
