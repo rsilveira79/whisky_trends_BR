@@ -107,12 +107,21 @@ data,marca,descricao,disponibilidade,loja,sku,preco_moeda,preco_valor,url
 2022-04-11 01:12:57.269895,Laphroaig,Whisky Laphroaig 10 Anos 750 ml,InStock,Casa da Bebida,750,BRL,398.91,https://www.casadabebida.com.br/whisky/whisky-laphroaig-10-anos/
 2022-04-11 01:12:58.935301,Macallan,Whisky Macallan Sherry Oak 12 anos 700 ml,InStock,Casa da Bebida,2744,BRL,906.21,https://www.casadabebida.com.br/whisky/macallan-sherry-oak-12-anos-700-ml/
 2022-04-11 01:13:00.582471,Macallan,Whisky The Macallan 18 anos - Double Cask 700 ml,InStock,Casa da Bebida,226,BRL,3061.76,https://www.casadabebida.com.br/whisky/whisky-the-macallan-18-anos/
-2022-04-12T01:10:21.978465,Singleton,Whisky Singleton 12 Anos Dufftown 700 ml,InStock,Casa da Bebida,874,BRL,189.91,https://www.casadabebida.com.br/whisky/singleton-12-anos-of-glen-ord-700-ml/
-2022-04-12T01:10:24.609368,Glenfiddich,Whisky Glenfiddich 12 anos 750ml,InStock,Casa da Bebida,114,BRL,284.91,https://www.casadabebida.com.br/whisky/single-malt/whisky-glenfiddich-12-anos/
-2022-04-12T01:10:23.310012,Glenkinchie,Whisky Glenkinchie 12 Anos 750 ml - Single Malt,InStock,Casa da Bebida,873,BRL,351.41,https://www.casadabebida.com.br/whisky/glenkinchie-12-anos-750-ml/
-2022-04-12T01:10:25.939417,Talisker,Whisky Talisker 10 anos 750 ml,InStock,Casa da Bebida,872,BRL,379.91,https://www.casadabebida.com.br/whisky/talisker-10-anos-750-ml/
-2022-04-12T01:10:27.493238,Johnnie Walker,Whisky Johnnie Walker Green Label 750 ml,InStock,Casa da Bebida,15,BRL,379.91,https://www.casadabebida.com.br/whisky/whisky-johnnie-walker-green-label/
-2022-04-12T01:10:29.993965,Glenlivet,Whisky Glenlivet 15 anos 750 ml,InStock,Casa da Bebida,1139,BRL,379.91,https://www.casadabebida.com.br/whisky/glenlivet-15-anos-750-ml/
-2022-04-12T01:10:32.032668,Laphroaig,Whisky Laphroaig 10 Anos 750 ml,InStock,Casa da Bebida,750,BRL,398.91,https://www.casadabebida.com.br/whisky/whisky-laphroaig-10-anos/
-2022-04-12T01:10:33.368789,Macallan,Whisky Macallan Sherry Oak 12 anos 700 ml,InStock,Casa da Bebida,2744,BRL,906.21,https://www.casadabebida.com.br/whisky/macallan-sherry-oak-12-anos-700-ml/
-2022-04-12T01:10:35.316375,Macallan,Whisky The Macallan 18 anos - Double Cask 700 ml,InStock,Casa da Bebida,226,BRL,3061.76,https://www.casadabebida.com.br/whisky/whisky-the-macallan-18-anos/
+2022-04-12 01:10:21.978465,Singleton,Whisky Singleton 12 Anos Dufftown 700 ml,InStock,Casa da Bebida,874,BRL,189.91,https://www.casadabebida.com.br/whisky/singleton-12-anos-of-glen-ord-700-ml/
+2022-04-12 01:10:24.609368,Glenfiddich,Whisky Glenfiddich 12 anos 750ml,InStock,Casa da Bebida,114,BRL,284.91,https://www.casadabebida.com.br/whisky/single-malt/whisky-glenfiddich-12-anos/
+2022-04-12 01:10:23.310012,Glenkinchie,Whisky Glenkinchie 12 Anos 750 ml - Single Malt,InStock,Casa da Bebida,873,BRL,351.41,https://www.casadabebida.com.br/whisky/glenkinchie-12-anos-750-ml/
+2022-04-12 01:10:25.939417,Talisker,Whisky Talisker 10 anos 750 ml,InStock,Casa da Bebida,872,BRL,379.91,https://www.casadabebida.com.br/whisky/talisker-10-anos-750-ml/
+2022-04-12 01:10:27.493238,Johnnie Walker,Whisky Johnnie Walker Green Label 750 ml,InStock,Casa da Bebida,15,BRL,379.91,https://www.casadabebida.com.br/whisky/whisky-johnnie-walker-green-label/
+2022-04-12 01:10:29.993965,Glenlivet,Whisky Glenlivet 15 anos 750 ml,InStock,Casa da Bebida,1139,BRL,379.91,https://www.casadabebida.com.br/whisky/glenlivet-15-anos-750-ml/
+2022-04-12 01:10:32.032668,Laphroaig,Whisky Laphroaig 10 Anos 750 ml,InStock,Casa da Bebida,750,BRL,398.91,https://www.casadabebida.com.br/whisky/whisky-laphroaig-10-anos/
+2022-04-12 01:10:33.368789,Macallan,Whisky Macallan Sherry Oak 12 anos 700 ml,InStock,Casa da Bebida,2744,BRL,906.21,https://www.casadabebida.com.br/whisky/macallan-sherry-oak-12-anos-700-ml/
+2022-04-12 01:10:35.316375,Macallan,Whisky The Macallan 18 anos - Double Cask 700 ml,InStock,Casa da Bebida,226,BRL,3061.76,https://www.casadabebida.com.br/whisky/whisky-the-macallan-18-anos/
+2022-04-13T01:16:07.178766,Singleton,Whisky Singleton 12 Anos Dufftown 700 ml,InStock,Casa da Bebida,874,BRL,189.91,https://www.casadabebida.com.br/whisky/singleton-12-anos-of-glen-ord-700-ml/
+2022-04-13T01:16:10.526705,Glenfiddich,Whisky Glenfiddich 12 anos 750ml,InStock,Casa da Bebida,114,BRL,284.91,https://www.casadabebida.com.br/whisky/single-malt/whisky-glenfiddich-12-anos/
+2022-04-13T01:16:08.867337,Glenkinchie,Whisky Glenkinchie 12 Anos 750 ml - Single Malt,InStock,Casa da Bebida,873,BRL,351.41,https://www.casadabebida.com.br/whisky/glenkinchie-12-anos-750-ml/
+2022-04-13T01:16:12.212789,Talisker,Whisky Talisker 10 anos 750 ml,InStock,Casa da Bebida,872,BRL,379.91,https://www.casadabebida.com.br/whisky/talisker-10-anos-750-ml/
+2022-04-13T01:16:13.926743,Johnnie Walker,Whisky Johnnie Walker Green Label 750 ml,InStock,Casa da Bebida,15,BRL,379.91,https://www.casadabebida.com.br/whisky/whisky-johnnie-walker-green-label/
+2022-04-13T01:16:15.617510,Glenlivet,Whisky Glenlivet 15 anos 750 ml,InStock,Casa da Bebida,1139,BRL,379.91,https://www.casadabebida.com.br/whisky/glenlivet-15-anos-750-ml/
+2022-04-13T01:16:17.769141,Laphroaig,Whisky Laphroaig 10 Anos 750 ml,InStock,Casa da Bebida,750,BRL,398.91,https://www.casadabebida.com.br/whisky/whisky-laphroaig-10-anos/
+2022-04-13T01:16:19.453362,Macallan,Whisky Macallan Sherry Oak 12 anos 700 ml,InStock,Casa da Bebida,2744,BRL,906.21,https://www.casadabebida.com.br/whisky/macallan-sherry-oak-12-anos-700-ml/
+2022-04-13T01:16:21.919099,Macallan,Whisky The Macallan 18 anos - Double Cask 700 ml,InStock,Casa da Bebida,226,BRL,3061.76,https://www.casadabebida.com.br/whisky/whisky-the-macallan-18-anos/
